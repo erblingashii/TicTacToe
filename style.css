@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #6a0dad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.entirePage {
+    background: linear-gradient(145deg, #7b1fa2, #4a0072);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.player {
+    color: #f8bbd0;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hide {
+    display: none;
+}
+
+.winning-line {
+    position: absolute;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.gameContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.tile {
+    background-color: #311b92;
+    border-radius: 10px;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tile:hover {
+    background-color: #512da8;
+}
+
+.playerX {
+    color: #ff1744;
+}
+
+.playerO {
+    color: #29b6f6;
+}
+
+.announcer {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#reset {
+    background-color: #ff80ab;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 25px 0;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#reset:hover {
+    background-color: #ff4081;
+}
